@@ -1,0 +1,120 @@
+/* PAGE */
+.seller-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: bl;
+
+}
+
+/* CONTAINER */
+.seller-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TITLE */
+.seller-title {
+  margin-bottom: 25px;
+}
+
+/* BOX */
+.add-product-box,
+.my-products {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* FORM GRID */
+.product-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* INPUTS */
+.product-form input,
+.product-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.product-form textarea {
+  resize: none;
+  height: 50px;
+}
+
+/* BUTTON */
+.add-btn {
+  margin-top: 20px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+}
+
+.add-btn:hover {
+  background: #0b5ed7;
+}
+
+/* PRODUCT CARD */
+.product-card1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
+/* IMAGE */
+.product-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* INFO */
+.product-info {
+  flex: 1;
+}
+
+.product-info h4 {
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* PRICE */
+.product-price {
+  color: green;
+  font-size: 20px;
+}
+
+/* DELETE */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #bb2d3b;
+}
