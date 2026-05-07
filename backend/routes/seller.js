@@ -37,7 +37,23 @@ router.post(
   authenticateToken,
   async (req, res) => {
     const db = req.app.locals.db;
+    const [users] = await db.query(
+      `
+      SELECT status
+      FROM users
+      WHERE id=?
+      `,
+      [req.user.id]
+    );
 
+    if (
+      users[0].status !== "approved"
+    ) {
+      return res.status(403).json({
+        message:
+          "Seller Not Approved By Admin",
+      });
+    }
     const {
       title,
       description,
