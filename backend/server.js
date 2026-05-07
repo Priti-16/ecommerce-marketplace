@@ -9,11 +9,11 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: "127.0.0.1",
-  port: 3307,
-  user: "root",
-  password: "ROOT",
-  database: "ecommerce",
+  host: process.env.MYSQLHOST,
+  port: process.env.MYSQLPORT,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
 });
 
 (async () => {
