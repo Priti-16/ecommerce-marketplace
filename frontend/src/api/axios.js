@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://https://ecommerce-marketplace-bcog.onrender.com/api:5000/api",
+  baseURL: "https://ecommerce-marketplace-bcog.onrender.com/api",
 });
 
 API.interceptors.request.use((config) => {
